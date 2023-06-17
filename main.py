@@ -51,7 +51,7 @@ def main(config: Config):
         val_or_test("val", device, model, val_dataloader, loss_func)
         result_acc = val_or_test("test", device, model, test_dataloader, loss_func)
         print("")
-    print(f"Result Accuracy: {100*result_acc:2f}%")
+    print(f"Result Accuracy: {100*result_acc:.2f}%")
 
 
 if __name__ == "__main__":
