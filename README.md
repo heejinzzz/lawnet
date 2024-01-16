@@ -8,7 +8,7 @@ git clone https://github.com/heejinzzz/lawnet.git
 cd lawnet
 ```
 
-2. Download `Datasets.zip` from [here](https://drive.google.com/file/d/1fieKMRg1fkk-Iv02llwEhJC2DKXzBwK0/view?usp=sharing) and unzip it into the current directory. The structure of the current directory should be:
+2. Download `Datasets.zip` from [here](https://pan.baidu.com/s/1DpMP50_DncyraDNSGxuClQ?pwd=3bgd) and unzip it into the current directory. The structure of the current directory should be:
 
 ```
 ├──lawnet
