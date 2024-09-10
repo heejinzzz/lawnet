@@ -1,4 +1,7 @@
 # LaWNet
+This is the official implementation of **LaWNet** proposed in the paper:
+
+[LaWNet: Audio-Visual Emotion Recognition by Listening and Watching](https://ieeexplore.ieee.org/document/10651101)
 
 ## Pre-requisites
 1. Download and enter the project:
@@ -67,4 +70,18 @@ The full set of optional arguments are:
                     the dataset you want to train on, available options: ['ravdess', 'crema-d']
 --sample_frame_num SAMPLE_FRAME_NUM
                     the number of frames sampled from each video clip, default is 8
+```
+
+## Citation
+```bibtex
+@INPROCEEDINGS{10651101,
+  author={Cheng, Kailei and Tian, Lihua and Li, Chen},
+  booktitle={2024 International Joint Conference on Neural Networks (IJCNN)}, 
+  title={LaWNet: Audio-Visual Emotion Recognition by Listening and Watching}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Emotion recognition;Visualization;Technological innovation;Fuses;Neural networks;Feature extraction;Sampling methods;Audio-Visual Emotion Recognition;Multimodal Interaction;Video Recognition},
+  doi={10.1109/IJCNN60899.2024.10651101}}
 ```
