@@ -70,7 +70,7 @@ The full set of optional arguments are:
 ```
 
 ## Train
-Train the LaWNet model on RAVDESS or CREMA-D dataset:
+You can also train a new LaWNet model on RAVDESS or CREMA-D dataset:
 
 ```shell
 python main.py --dataset {dataset}
