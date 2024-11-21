@@ -11,7 +11,7 @@ git clone https://github.com/heejinzzz/lawnet.git
 cd lawnet
 ```
 
-2. Download `Datasets.zip` from [here](https://pan.baidu.com/s/1DpMP50_DncyraDNSGxuClQ?pwd=3bgd) and unzip it into the current directory. The structure of the current directory should be:
+2. Download `Datasets.zip` and `Checkpoints.zip` from [here](https://pan.baidu.com/s/1kVMvhN9BxQkyuJvfBqD3cw?pwd=gddp) and unzip them into the current directory. The structure of the current directory should be:
 
 ```
 ├──lawnet
@@ -19,6 +19,9 @@ cd lawnet
     ├──Datasets
         ├──CREMA-D
         ├──RAVDESS
+    ├──Checkpoints
+        ├──lawnet_for_crema-d.pth
+        ├──lawnet_for_ravdess.pth
     ├──.gitignore
     ├──config.py
     ├──dataset.py
@@ -38,6 +41,33 @@ pip install -r requirements.txt
 ```
 
 **Tip:** We recommend the use of virtual environment tools such as Anaconda.
+
+## Test
+We provide the weights of two models that reach SOTA on the RAVDESS and CREMA-D datasets respectively. You can directly use them for testing:
+
+```shell
+python test.py --dataset {dataset}
+```
+
+For example, if you want to test the model which reaches SOTA on the RAVDESS dataset, then the command will be:
+
+```shell
+python test.py --dataset ravdess
+```
+
+The full set of optional arguments are:
+
+```shell
+--device DEVICE       device that you want to use to run testing, default is 'cuda' if torch.cuda.is_available() else 'cpu'
+--dataset_path DATASET_PATH
+                      datasets storage path, default is './Datasets'
+--num_workers NUM_WORKERS
+                      num_workers of Dataloaders, default is 1
+--dataset {ravdess,crema-d}
+                      the dataset you want to test on, available options: ['ravdess', 'crema-d']
+--checkpoints_path CHECKPOINTS_PATH
+                      model checkpoint files storage path, default is './Checkpoints'
+```
 
 ## Train
 Train the LaWNet model on RAVDESS or CREMA-D dataset:
